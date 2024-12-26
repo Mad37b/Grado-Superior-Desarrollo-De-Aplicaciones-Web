@@ -7,7 +7,7 @@ Estos apuntes y ejercicios estan orientados además con la Formación Dual
 
 Java 
 
-Jakarta Web
+Jakarta EE (Java Web)
 
 Javascript 
 
