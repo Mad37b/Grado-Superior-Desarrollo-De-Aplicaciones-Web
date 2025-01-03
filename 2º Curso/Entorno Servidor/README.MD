@@ -1,4 +1,8 @@
 
+# Entorno Servidor 
+
+Dedicado al desarrollo de aplicaciones en el lado del servidor con PHP y MySQL con gestor de base de datos
+
 
 # Instalación de PHP por xampp
 
