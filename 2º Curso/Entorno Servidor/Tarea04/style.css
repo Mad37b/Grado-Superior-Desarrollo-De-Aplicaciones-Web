@@ -1,0 +1,30 @@
+body{background-color: grey;}
+
+.contenedorPadre{
+    display: flex;
+    justify-content: center;
+  }
+
+.contenedorHijo{}
+
+.contenedorMostrar{
+
+    height: 400px;
+    width: 300px;
+    border: 4px solid black;
+    background-color: green;
+
+}
+
+.contenedorMostrar select{
+
+    width: 300px;
+
+}
+
+.contenedorMostrar button{
+
+    background-color: blue;
+
+}
+
