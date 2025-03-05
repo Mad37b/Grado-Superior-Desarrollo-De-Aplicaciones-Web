@@ -29,3 +29,9 @@ Programación
 Base de datos
 
 # 2º Curso 
+
+ - Entorno Cliente - Javascript 
+
+ - Entorno Servidor - PHP
+
+ - Aplicaciones web - Apache ,FTP , Tomcat , wildfly
