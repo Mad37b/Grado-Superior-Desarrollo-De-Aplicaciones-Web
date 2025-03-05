@@ -24,9 +24,15 @@ APACHE 02
 
 # 1º Curso 
 
-Programación 
+- Programación - Java y JavaFX
 
-Base de datos
+- Base de datos - Java y oracle SQL y mongodb con java
+
+- Lenguaje de marcas - XML y Json
+
+- Diseño web  - CSS y HTML5
+
+ - Aplicacion de Servidor - Jakarta 9.0 / 10 - (Java web - JSP )
 
 # 2º Curso 
 
