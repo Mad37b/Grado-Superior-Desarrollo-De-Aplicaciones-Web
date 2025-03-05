@@ -1,0 +1,14 @@
+body.form {background-color: aqua;} /** vCrear.blade**/
+body .default{background-color: tomato;} /** index **/
+body .table{background-color: blanchedalmond;}
+
+
+/**vcrear.blade**/
+
+h1 {text-align: center;}
+
+.contenedor-padre{display: flex; justify-content: center;}
+
+.contenedor-hijo{background-color: orange; border: 2px solid black; border-radius: 6px; width: 100%; max-width: 550px; margin: 0 auto; padding:10px;}
+
+.contenedor-Formulario{ }

@@ -1,0 +1,28 @@
+{
+    "name": "ulisesiii/tarea05",
+    "description": "Este es mi primer composer para la tarea05",
+    "type": "project",
+    "authors": [
+        {
+            "name": "mad37b",
+            "email": "miguelkit37@hotmail.com"
+        }
+    ],
+    "require": {
+        "philo/laravel-blade": "^3.1",
+        "milon/barcode": "^6.0",
+        "fzaninotto/faker": "^1.5",
+        "aura/autoload": "^2.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Tarea05\\": "src"}
+        },
+
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
+}
