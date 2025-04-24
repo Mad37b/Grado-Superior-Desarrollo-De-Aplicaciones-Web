@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="Tarea06.operaciones" targetNamespace="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/">
+  <types>
+    <xsd:schema targetNamespace="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+    </xsd:schema>
+  </types>
+  <portType name="Tarea06.operacionesPort">
+    <operation name="__construct">
+      <input message="tns:__constructIn"/>
+    </operation>
+    <operation name="getPVP">
+      <input message="tns:getPVPIn"/>
+    </operation>
+    <operation name="getStock">
+      <input message="tns:getStockIn"/>
+    </operation>
+    <operation name="getFamilia">
+      <input message="tns:getFamiliaIn"/>
+    </operation>
+    <operation name="getcodigoFamilia">
+      <input message="tns:getcodigoFamiliaIn"/>
+    </operation>
+  </portType>
+  <binding name="Tarea06.operacionesBinding" type="tns:Tarea06.operacionesPort">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="__construct">
+      <soap:operation soapAction="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/#__construct"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/"/>
+      </output>
+    </operation>
+    <operation name="getPVP">
+      <soap:operation soapAction="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/#getPVP"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/"/>
+      </output>
+    </operation>
+    <operation name="getStock">
+      <soap:operation soapAction="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/#getStock"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/"/>
+      </output>
+    </operation>
+    <operation name="getFamilia">
+      <soap:operation soapAction="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/#getFamilia"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/"/>
+      </output>
+    </operation>
+    <operation name="getcodigoFamilia">
+      <soap:operation soapAction="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/#getcodigoFamilia"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/"/>
+      </output>
+    </operation>
+  </binding>
+  <message name="__constructIn"/>
+  <message name="getPVPIn">
+    <part name="idparam" type="xsd:anyType"/>
+  </message>
+  <message name="getStockIn">
+    <part name="codigoProducto" type="xsd:anyType"/>
+    <part name="codigoTienda" type="xsd:anyType"/>
+  </message>
+  <message name="getFamiliaIn"/>
+  <message name="getcodigoFamiliaIn">
+    <part name="paramFamilia" type="xsd:anyType"/>
+  </message>
+  <service name="Tarea06.operacionesService">
+    <port name="Tarea06.operacionesPort" binding="tns:Tarea06.operacionesBinding">
+      <soap:address location="http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/"/>
+    </port>
+  </service>
+</definitions>

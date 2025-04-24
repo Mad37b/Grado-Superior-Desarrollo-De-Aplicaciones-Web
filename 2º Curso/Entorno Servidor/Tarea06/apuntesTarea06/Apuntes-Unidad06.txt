@@ -1,0 +1,29 @@
+
+# Unidad 6 PHP Soap
+
+definicion sobre soap
+
+funcion de soap en las aplicaciones web
+
+caracteristicas de soap
+
+tipos de soap ?
+
+ SoapServer
+
+ SoapClient
+
+
+ # Usar Soap en un proyecto 
+
+
+ ## implementacion en un proyecto de php con composer 
+
+  dibujar un esquema de implementacion 
+
+
+ ## organizacion de los apuntes para la tarea 06
+
+  apuntes.txt --> apuntes.md ---> apuntes.word --> apuntes .pdf
+
+  apuntes sobre soap servidor y cliente sin wsdls

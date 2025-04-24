@@ -1,0 +1,26 @@
+{
+
+    "name": "ulisesiii/tarea06",
+    "description": "Este es mi segundo composer para la tarea06",
+    "type": "project",
+    "authors": [{"name":"mad37b"}],
+
+    "require": {
+        "philo/laravel-blade": "^3.1",
+         "aura/autoload": "^2.0",
+        "php2wsdl/php2wsdl": "^0.7.0",
+        "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4"
+
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Tarea06\\": "src"}
+        },
+
+        "config": {
+            "allow-plugins": {
+                "kylekatarnls/update-helper": true
+            }
+        }
+}
