@@ -4,7 +4,9 @@ namespace Tarea06;
 use PDO;
 
 /** Tarea05 -  Conexion con PDO */
-
+/**@access: public
+ * @author:
+ */
 
 class conexion {
     private $PDO;

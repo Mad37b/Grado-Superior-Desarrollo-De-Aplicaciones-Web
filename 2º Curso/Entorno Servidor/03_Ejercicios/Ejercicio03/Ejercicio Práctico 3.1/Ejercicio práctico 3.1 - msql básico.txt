@@ -1,0 +1,16 @@
+# Ejercicio práctico 3.1 - mysqld básico 
+
+Estos ejercicios son ejercicios prácticos del CRUD ( QUERY , INSERT INTO , UPDATE , DELETE)
+como primer contacto con la base de datos con php por el metodo mysqld () 
+
+cada carpeta contiene una metodologia ( corregir forma de decirlo ) de sql , hasta crear una base de datos
+
+nosotros mismos hemos creado una base de datos con el nombre ejercicio3 con la tabla ejercicioPractico3 con los siguientes datos
+
+ID - INT - KEY primary 
+
+Nombre - Varchar
+
+Apellido  - Varchar
+
+Nota - INT 

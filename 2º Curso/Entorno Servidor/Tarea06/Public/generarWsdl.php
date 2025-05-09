@@ -9,7 +9,7 @@ require '../vendor/autoload.php';
 $class = "Tarea06\operaciones";
 
 
-$serviceURI = "http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/";
+$serviceURI = "http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/servicioW.php";
 
 $wsdlGenerator = new PHP2WSDL\PHPClass2WSDL($class, $serviceURI);
 // Generate the WSDL from the class adding only the public methods that have @soap annotation.

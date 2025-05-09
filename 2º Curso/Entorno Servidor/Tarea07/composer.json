@@ -1,0 +1,7 @@
+{
+    "autoload": {
+      "psr-4": {
+        "Tarea07\\": "src/"
+      }
+    }
+  }

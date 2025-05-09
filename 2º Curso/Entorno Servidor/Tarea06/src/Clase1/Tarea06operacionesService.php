@@ -15,7 +15,8 @@ class Tarea06operacionesService extends \SoapClient
      * @param array $options A array of config values
      * @param string $wsdl The wsdl file to use
      */
-    public function __construct(array $options = array(), $wsdl = null){
+    public function __construct(array $options = array(), $wsdl = null)
+    {
     
   foreach (self::$classmap as $key => $value) {
     if (!isset($options['classmap'][$key])) {
@@ -26,14 +27,14 @@ class Tarea06operacionesService extends \SoapClient
   'features' => 1,
 ), $options);
       if (!$wsdl) {
-        $wsdl = 'http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/servicio.wsdl';
+        $wsdl = 'C:/Users/Ulises III/Desktop/Estudios Académicos/Grado Superior Distancia/02 Entorno Servidor/03 Ejercicios/Tarea06/servidorSoap/servicio.wsdl';
       }
       parent::__construct($wsdl, $options);
     }
 
     /**
-     * @param anyType $idparam
-     * @return void
+     * @param int $idparam
+     * @return anyType
      */
     public function getPVP($idparam)
     {
@@ -41,9 +42,9 @@ class Tarea06operacionesService extends \SoapClient
     }
 
     /**
-     * @param anyType $codigoProducto
-     * @param anyType $codigoTienda
-     * @return void
+     * @param int $codigoProducto
+     * @param int $codigoTienda
+     * @return anyType
      */
     public function getStock($codigoProducto, $codigoTienda)
     {
@@ -51,7 +52,7 @@ class Tarea06operacionesService extends \SoapClient
     }
 
     /**
-     * @return void
+     * @return Array
      */
     public function getFamilia()
     {
@@ -59,8 +60,8 @@ class Tarea06operacionesService extends \SoapClient
     }
 
     /**
-     * @param anyType $paramFamilia
-     * @return void
+     * @param string $paramFamilia
+     * @return Array
      */
     public function getcodigoFamilia($paramFamilia)
     {

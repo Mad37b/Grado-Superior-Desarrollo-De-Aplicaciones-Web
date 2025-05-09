@@ -1,13 +1,10 @@
 <?php
 // Apartado 2
-$options = [
-    'location' => 'http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/servicioW.php',
-    'uri' => 'http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/',
-];
+
 $wsdl = "http://localhost/ejerciciosEntornoServidor/Tarea06/servidorSoap/servicio.wsdl";
 
 try{
-    $cliente = new SoapClient($wsdl,$options);
+    $cliente = new SoapClient($wsdl);
 
 } catch (SoapFault $e) {
     echo "<p><strong>Error SOAP Cliente:</strong> " . $e->getMessage() . "</p> \n";
@@ -15,33 +12,57 @@ try{
     echo "<pre>Respuesta SOAP:\n" . htmlspecialchars($cliente->__getLastResponse()) . "</pre>";
 }
 
-   //parametro de pvp
-    $idparam = 5;
-   //parametro de stock
+echo "<h1>Estoy en el cliente SOAP</h1>";
+// 1. Parametros
+  // parametro de pvp y de la tabla productos -> id :   tiene que ser Int 
+    $idparam = 5; 
+  // parametro de stock
+  $codigoParam = 1 ; 
+  $codigo2Param = 2 ;
+  // parametro familiaProductos
+  $familiaProductosParam = "CONSOL";
+  //familia no recibe parametros 
 
-   // parametro familiaProductos
-   $familiaProductosParam = "CONSOL";
-    //instancias 
+//2. SoapCall
+  $pvp = $cliente->__soapCall('getPVP',["id" => $idparam]);
+
+  echo "<p><strong>Los datos del precio son:</strong> $pvp";
+  //
+  $cantidad = $cliente->__soapCall('getStock',['producto'=>1,'tienda'=>1]);
+  // 
+  $familia = $cliente->__soapCall('getFamilia',[]);
+  $productoFamilia = $cliente->__soapCall("getcodigoFamilia",["codigoFamiliaProducto "=>$familiaProductosParam]);    
+    echo "<p><strong>Los datos del stock son :</strong> $cantidad</p>";
+
+    echo "<p><strong>Los datos de la familia son:</strong>";
     
+  echo"<table border='1' style='text-align: center; margin:0 auto'>";
+  echo "<th>Productos</th>"."<th>Tienda</th>"."<th>Unidades</th>";
 
-    $pvp = $cliente->__soapCall('getPVP',["id" => $idparam]);
-    $pvp2 = ($pvp == null) ? "no existe el producto " : $pvp;
-    echo "el codigo producto es : " . $pvp ; 
+    foreach ( $familia as $usuario){
+      echo "<tr>";
+        echo "<td>".$usuario[0] ."</td>";
+        echo "<td>".$usuario[1] ."</td>" ;
+        echo "<td>".$usuario[2] ."</td>";
+        echo "</tr>";
+    }
+    echo " </table>";
+    echo  "</p>" ; 
 
-    var_dump($precio);
-    $cantidad = $cliente->getStock(1,1);
-    $familia = $cliente->getFamilia();
-    $productoFamilia = $cliente->getcodigoFamilia($familiaProductosParam);    
+    echo "<p><strong>Los datos del producto Familia son:</strong></p>";
 
-    echo "<p><strong>Respuesta del servidor:</strong> $pvp</p>";
-    echo "<p><strong>Respuesta del servidor:</strong> $cantidad</p>";
-    echo "<p><strong>Respuesta del servidor:</strong> $familia</p>";
-    echo "<p><strong>Respuesta del servidor:</strong> $productoFamilia</p>";
-    echo "<p>Estoy en el cliente SOAP</p>";
-    echo "<p><strong>getPVP:</strong> "; var_dump($pvp); echo "</p>";
-    echo "<p><strong>getStock:</strong> "; var_dump($cantidad); echo "</p>";
-    echo "<p><strong>getFamilia:</strong> "; var_dump($familia); echo "</p>";
-    echo "<p><strong>getcodigoFamilia:</strong> "; var_dump($productoFamilia); echo "</p>";
+    echo"<table border='1' style='text-align: center; margin:0 auto'>";
+    echo "<th>Nombre</th>"."<th>Nombre_Corto</th>"."<th>Precio</th>";
+  
+      foreach ( $productoFamilia as $producto){
+        echo "<tr>";
+          echo "<td>".$producto[0] ."</td>";
+          echo "<td>".$producto[1]."</td>" ;
+          echo "<td>".$producto[2] ."€"."</td>";
+          echo "</tr>";
+      }
+      echo " </table>";
+      echo  "</p>" ; 
     
     // Debug de las cabeceras SOAP 
     echo "<pre>Solicitud SOAP:\n" . htmlspecialchars($cliente->__getLastRequest()) . "</pre>";

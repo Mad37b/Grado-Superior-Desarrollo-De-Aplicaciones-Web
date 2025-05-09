@@ -1,0 +1,36 @@
+body .form {background-color: aqua;} /** vCrear.blade**/
+body {background-color: tomato;} /** index **/
+.Index-body{background-color: grey;}
+
+/**vcrear.blade**/
+
+h1 {text-align: center;}
+
+.contenedor-padre{display: flex; justify-content: center;}
+
+.contenedor-hijo{background-color: orange; border: 2px solid black; border-radius: 6px; width: 100%; max-width: 550px; margin: 0 auto; padding:10px;}
+
+/**  listado.php */
+.session{background-color: aquamarine; border: 1px solid black;}
+.tabla{background-color: cadetblue;text-align: center; border-collapse: collapse;margin: 0 auto;border:1;}
+.tabla td{border:1px solid black}
+form td,tr,th{background-color: rgb(15, 133, 94); border: 1px solid black}
+
+/** login.php*/
+.h2_login{text-align: center;}
+.contenedorLogin{display: flex;justify-content: center;}
+.login{ 
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 5px black solid;
+    width: 400px;}
+    /** index **/
+
+    .padre-index{ display: flex; justify-content: center;}
+
+    .hijo-index{display: flex; justify-content: center;}
+
+    strong a{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: aquamarine;text-decoration: none; color: black;}
