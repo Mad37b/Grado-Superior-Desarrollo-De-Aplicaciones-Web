@@ -1,0 +1,43 @@
+<localizaciones>
+    <localización>
+        <nombre></nombre>
+        <longitud></longitud>
+        <latitud></latitud>
+    <localización>
+</localizaciones>
+
+	$ficheroxml .= "
+		<LOCALIZACIONES>
+			<LOCALIZACION>
+				<TITLE>$Nombre;/TITLE>
+				<ARTIST>$Latitud</ARTIST>
+				<COUNTRY>$Longitud</COUNTRY>
+				<COMPANY>Columbia</COMPANY>
+				<PRICE>10.90</PRICE>
+				<YEAR>1985</YEAR>
+			</LOCALIZACION>
+			<LOCALIZACION>
+				<TITLE>Hide your heart</TITLE>
+				<ARTIST>Bonnie Tyler</ARTIST>
+				<COUNTRY>UK</COUNTRY>
+				<COMPANY>CBS Records</COMPANY>
+				<PRICE>9.90</PRICE>
+				<YEAR>1988</YEAR>
+			</LOCALIZACION>
+			<LOCALIZACION>
+				<TITLE>Greatest Hits</TITLE>
+				<ARTIST>Dolly Parton</ARTIST>
+				<COUNTRY>USA</COUNTRY>
+				<COMPANY>RCA</COMPANY>
+				<PRICE>9.90</PRICE>
+				<YEAR>1982</YEAR>
+			</LOCALIZACION>
+			<LOCALIZACION>
+				<TITLE>Still got the blues</TITLE>
+				<ARTIST>Gary Moore</ARTIST>
+				<COUNTRY>UK</COUNTRY>
+				<COMPANY>Virgin records</COMPANY>
+				<PRICE>10.20</PRICE>
+				<YEAR>1990</YEAR>
+			</LOCALIZACION>
+		</LOCALIZACIONES>";

@@ -1,0 +1,15 @@
+  html,
+  body {
+    height: 25%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  #map {
+    height: 400px;
+  }
+
+  #resultados{
+    background: yellow;
+  }
