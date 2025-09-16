@@ -1,0 +1,124 @@
+package test2;
+import java.util.*;
+public class array {
+
+	
+
+	
+	public static void main (String [] args ) {
+		
+		// 1. Ejercicio  - crear un array como variable y actualizar, añadir o modificar 
+		
+		// variables 
+		
+		
+		Scanner teclado = new Scanner(System.in);
+		int[] array = new int [5];
+		int añadir= 0;
+		String respuesta = " " ; 
+		int indice= 0 ;
+		int contador = 1;
+		
+		// con for solo muestra los datos
+	
+		
+		// Aqui empieza el programa
+		
+		System.out.println("Bienvenido a mi programa de array"+"\n");
+		System.out.println("¿ Quieres añadir, modificar o borrar algo ?");
+		
+		respuesta = teclado.next(); // Lee la respuesta
+		while (!respuesta.equalsIgnoreCase("Salir")) {	
+
+			if (respuesta.equalsIgnoreCase("Añadir")) {
+				// si el array no está vacío // el array nunca estará en null por que ya lo he iniciado en la variable
+				if (1 < contador) {
+					System.out.println("Ya hay datos en el array ");
+					
+					for ( int numero : array) {
+						System.out.println("prueba forEacht -> "  + contador + " - "+ array[indice]);
+						System.out.println("Prueba formEacht 2 " + numero );
+						contador++;
+					}
+				}else {
+					
+				System.out.println("Perfecto vamos a introducir datos");
+			
+				for( int i = 0; i < array.length ; i++) {
+					
+					respuesta = teclado.next (); 
+					int valor = Integer.parseInt(respuesta);
+					array [i] = valor ; 
+					
+					System.out.println("Perfecto , el valor introducido a sido " + valor + "\n");
+					System.out.println("El resultado a sido ;" + " Indice " + i + " - " + array[i]);
+					System.out.println("El resultado total es " + Arrays.toString(array));
+					contador++;
+					
+				}
+				
+		
+				}
+				
+			}
+			System.out.println("\n" + "prueba");
+			System.out.println("valor del contador = " + contador); // aqui se queda 
+			System.out.println("Selecciona la siguiente acción : Añadir | Modificar | Borrar | Salir");
+			respuesta = teclado.next();
+			
+			if(respuesta.equalsIgnoreCase("Modificar")) {
+				System.out.println("Vale vamos a modificar los datos");
+				System.out.println("Selecciona el indice que quieras cambiar");
+				respuesta = teclado.next();
+				int valor = Integer.parseInt(respuesta);
+				if (array[valor] != 0) {
+			
+					
+					int nuevoValor = 0;
+					String nuevaRespuesta ="";
+					nuevaRespuesta = teclado.next();				
+					nuevoValor = Integer.parseInt(nuevaRespuesta);
+					array[valor] = nuevoValor;
+					System.out.println(" el valor a sido " +nuevoValor);
+					System.out.println("nuevo valor en el array " + array[valor] + " con el valor " + nuevoValor);
+					
+				}else {
+					System.out.println("Has seleccionado el indice" + valor + " - array - " + array[valor]);
+					System.out.println("No hay valores que modificar , el array está vacio" + Arrays.toString(array) );
+				}
+				
+			}
+			
+			if(respuesta.equalsIgnoreCase("borrar")) {
+				System.out.println("Perfecto , elige Seleccionado o Todo");
+				respuesta = teclado.next();
+				if(respuesta.equalsIgnoreCase("Seleccionado")) {
+					System.out.println("Vale vamos a borrar los datos seleccionados");	
+					respuesta = teclado.next(); // queremos seleccionar el Indice del array 
+					int valor = Integer.parseInt(respuesta); // lo pasamos a Integer 
+					
+					for ( int i = 0 ; i < array.length ; i ++) {
+						if(i == valor ) {
+							
+							array[valor] = 0 ; 	
+							System.out.println("el valor de indice " + valor  + " es " + array[valor]);
+						}
+					
+					}
+					
+				}
+				if(respuesta.equalsIgnoreCase("Todo")) {
+					
+					array = new int[5];
+					contador= 1; 
+					System.out.println(" Se han borrado todo los datos ");
+				}
+				
+				
+			}
+			
+		}
+		
+	}
+	
+}
