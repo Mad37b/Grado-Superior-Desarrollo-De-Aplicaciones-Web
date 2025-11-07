@@ -1,5 +1,0 @@
-INDEX VERSION 1.134+C:\Users\Ulises III\Desktop\Estudios Académicos\Grado Superior Distancia 2\01 Programación\03 Tareas\.metadata\.plugins\org.eclipse.jdt.core
-1643407486.index
-1865797976.index
-2393563997.index
-521605994.index
