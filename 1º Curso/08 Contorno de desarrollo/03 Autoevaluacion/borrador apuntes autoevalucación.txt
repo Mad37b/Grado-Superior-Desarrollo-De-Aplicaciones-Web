@@ -1,0 +1,54 @@
+1. Versiones de prueba 
+
+
+beta
+
+2. que es la metrica v3? 
+
+los 3 principales procesos de la métrica v3
+
+Las normas de la métrica v3 se basan en ISO 12207
+
+3. Documentación 
+
+la documentación final que se dirige al usuario es la externa , sobre un programa  o aplicación ? 
+
+
+3.1 La documentación para el **diseño de diagrama y estructura de código** es la * Documentación SDD *
+
+3.2 El análisis que que se realiza para ver si un proyecto es viable es ** EVS**
+
+El ** mantenimiento** es quien busca la mejora y la optimización del proyecto / producto
+
+Modelo espiral - prototipos sucesivos
+
+modelo Extrema - por parejas 
+	
+	Las prestaciones no deben superar los 3 días ideales
+
+Las pruebas Unitarias son pequeñas pruebas que se hacen al código para comprobar funcionalidades específicas
+
+El  diseño implica la creación de estructuras y organizaciones de sistemas de software
+
+Un Service pack es un parche o actualización correctiva 
+
+en la actividad IAS se realiza la implatanción y aceptación del sistema
+
+
+El documento que se emplea en la fase de diseño de programación extrema es la tarjeta CRC
+
+El tiempo que se dedica a mantenimiento es de dos tercios 
+
+La primera fase en cascada es análisis
+
+El modelo de desarrollo en cascada se conoce como el modelo clásico
+
+Las restricciones del sistema se hacen en la actividad ASI
+
+el ministerio de hacienda promovió la metrica v3
+
+El diseño físico de datos y las interfaces se hacen en la actividad DSI
+
+
+
+

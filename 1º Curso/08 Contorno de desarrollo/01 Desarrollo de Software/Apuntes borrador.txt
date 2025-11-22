@@ -1,0 +1,39 @@
+UD 1 Ingeniera de software
+
+
+
+Modelo en espiral basado en prototipos ( saber sobre prototipos sucesivos ) 
+
+Análisis para ver si un proyecto es viable :EVS.
+La implantación y aceptación del sistema IAS
+el documento que se utilza en la fase de diseño en la parte de programación extrema son las tarjetas CRC
+el documento que recoge los requisitos de software se llama ERS
+
+el mantenimiento se realiza en un tiempo de dos tercios
+el análisis es la primera fase en cascada
+el modelo en cascada es conocido como el modelo clásico
+
+la norma IEEE Es la aplicación de un enfoque sistemático, disciplinado y medible a los desarrollos de software
+
+El ministerio de hacienda y administraciones publicas promovió la metodología de la metrica v3
+
+El documento SDD recoge el desarrollo global de los componentes del sistema
+la actividad DSI crea el diseño físico de los datos de las interfaces de usuario
+
+
+las restricciones de sistema se especifican en ASI
+
+
+
+- 
+
+Programación extrema las prestaciones no deben superar los 3 días
+
+
+el diseño es la fase que implica la creación de la estructura del sistema de software
+
+La norma ISO 12207 es la que se utiliza en la métrica 3
+
+en la metrica 3 el mantenimiento da soporte a una nueva versión del sist
+
+El service pack es un parche 

@@ -1,0 +1,201 @@
+apuntes_restructurados.txt
+--------------------------
+
+TEMA 1: INGENIERÍA DE SOFTWARE
+
+1. FUNDAMENTOS DE SOFTWARE
+
+   - Informática: Ciencia del tratamiento automático de la información por medio de máquinas electrónicas.
+   - Hardware: Parte física y tangible (componentes electrónicos).
+   - Software: Parte lógica e intangible (programas, sistemas, datos) que hace funcionar el hardware.
+   - Algoritmo: Conjunto de reglas o instrucciones definidas, ordenadas y finitas para resolver un problema.
+   - Programa Informático: Algoritmo escrito en un lenguaje de programación. Es un conjunto de instrucciones que realizan una o varias tareas.
+
+2. TIPOS DE SOFTWARE
+
+   - Software de Sistemas:
+     - Gestiona y controla el hardware.
+     - Ejemplos: Sistemas operativos, Controladores de dispositivo, Herramientas de diagnóstico, Servidores.
+
+   - Software de Aplicaciones:
+     - Permite al usuario realizar tareas específicas.
+     - Ejemplos: Ofimática, Software educativo, Software empresarial (contabilidad), Bases de datos, Videojuegos, Software de comunicación (navegadores).
+     - Subdivisión:
+       - Software Horizontal: Para entornos genéricos (ej. aplicaciones ofimáticas).
+       - Software Vertical: Para entornos específicos (ej. contabilidad a medida).
+
+3. EL PROCESO DE DESARROLLO
+
+   - Depende de la complejidad del software.
+   - Requiere equipo, recursos y herramientas.
+
+4. MODELO EN CASCADA (CICLO DE VIDA CLÁSICO)
+
+   - Fases secuenciales: análisis, diseño, codificación, pruebas, instalación y mantenimiento. 
+
+   4.1. Análisis
+     - Se analizan y especifican los requisitos del software.
+     - Se obtiene información del cliente/usuarios.
+     - ENTREGABLE: Documento ERS (Especificación de Requisitos del Software), que detalla requisitos, costo y duración. [cite: 20]
+
+   4.2. Diseño
+     - Se descompone y organiza el sistema en partes.
+     - ENTREGABLE: Documento SDD (Documento de Diseño de Software). [cite: 21]
+     - El SDD contiene la estructura global, diseño lógico de datos, arquitectura, diseño de procedimientos e interfaz. [cite: 21, 22]
+
+   4.3. Codificación (Implementación)
+     - El programador transforma el diseño lógico (SDD) en código. [cite: 23]
+     - Se realizan tareas de depuración (errores sintácticos, semánticos, de lógica). [cite: 24]
+
+   4.4. Pruebas
+     - Se aplican técnicas al código para detectar errores. [cite: 24]
+     - Deben planificarse, diseñarse, ejecutarse y validarse. [cite: 24]
+     - TIPOS DE PRUEBAS:
+       - Pruebas Unitarias: Prueban pequeños trozos de código. [cite: 25]
+       - Pruebas de Integración: Prueban grupos de trozos de código que interactúan. [cite: 25]
+     - PRUEBAS SOBRE EL SISTEMA:
+       - Pruebas de Validación: Comprueba que se cumplen los requisitos del ERS. [cite: 25]
+       - Pruebas de Recuperación: Cómo reacciona el sistema ante un fallo. [cite: 25]
+       - Pruebas de Seguridad: Protección de datos contra agresiones. [cite: 26]
+       - Pruebas de Resistencia: Cómo responde a intentos de bloqueo o colapso. [cite: 27]
+       - Pruebas de Rendimiento: Tiempo de respuesta bajo demandas extremas. [cite: 28]
+     - VERSIONES:
+       - Versión Alfa: Inestable, se pueden añadir características. [cite: 30]
+       - Versión Beta: Inestable, no se añaden características, puede tener errores. [cite: 30]
+       - Versión Release (RC): Versión final que aún puede tener errores. [cite: 30]
+       - Versión RMT (RTM): Versión estable para comercializar. [cite: 30]
+
+   4.5. Instalación (Despliegue o Implantación)
+     - Se transfiere el software al ordenador destino y se configura. [cite: 31]
+     - Se usan herramientas llamadas "instaladores". [cite: 32]
+
+   4.6. Mantenimiento
+     - Se mejora y optimiza el software que ya está en producción. [cite: 32]
+     - Se realizan cambios para corregir errores, hacerlo más perfecto (optimizar), que evolucione (nuevas funciones) o que se adapte (nuevos entornos). [cite: 33]
+
+5. DOCUMENTACIÓN DEL SOFTWARE
+
+   - Asociada a todas las fases anteriores. [cite: 34]
+
+   5.1. Documentación Interna
+     - Aparece en el código (comentarios).
+     - Facilita el mantenimiento.
+     - Permite extraer documentación automática (ej. Javadoc). [cite: 35]
+
+   5.2. Documentación Externa
+     - Se adjunta a los programas. [cite: 37]
+     - Para Programadores: Código fuente, algoritmos, diagramas de diseño. [cite: 37]
+     - Para Usuarios: Requisitos del sistema, detalles de instalación, manual de uso, solución de errores. [cite: 37, 38]
+
+   5.3. Autodocumentación
+     - Se accede durante la ejecución del programa.
+     - Ejemplos: Índice de contenidos, asistentes, ayuda contextual, autores, versiones. [cite: 39]
+
+6. OTRAS METODOLOGÍAS
+
+   6.1. Modelo en Espiral
+     - Se basa en la creación de un prototipo que se va perfeccionando en sucesivas iteraciones. 
+     - En cada iteración se repiten las fases de análisis, diseño, codificación y pruebas. [cite: 41]
+
+   6.2. Programación Extrema (XP)
+     - Método de desarrollo ágil basado en iteraciones de planificación, diseño, codificación y pruebas. 
+     - Planificación:
+       - El cliente indica "prestaciones" (requisitos) en frases cortas. [cite: 43]
+       - Las tareas no deben durar más de 3 días. [cite: 43]
+       - Se define la "velocidad del proyecto" (prestaciones por iteración). [cite: 43]
+     - Diseño:
+       - Se usan tarjetas manuales tipo CRC (Class, Responsabilities, Collaboration). [cite: 45]
+     - Codificación y Pruebas:
+       - Se acuerdan estándares de codificación. [cite: 49]
+       - Se aconseja crear los tests unitarios *antes* que el propio código. [cite: 49]
+       - Se aconseja trabajar por parejas (Pair Programming). [cite: 49]
+
+   6.3. Métrica v.3
+     - Metodología de planificación, desarrollo y mantenimiento promovida por el Ministerio de Hacienda y Administraciones Públicas. 
+     - Orientada a desarrollo estructurado y orientado a objetos. 
+     - Cumple la norma ISO 12.207. [cite: 51]
+     - PROCESOS PRINCIPALES:
+       - 1. Planificación (PSI - Planificación de Sistemas de Información): [cite: 52]
+         - Obtener un marco de referencia alineado con la organización.
+       - 2. Desarrollo:
+         - EVS (Estudio de Viabilidad del Sistema): Analiza aspectos económicos, técnicos, legales y operativos. [cite: 53]
+         - ASI (Análisis del Sistema de Información): Obtiene la especificación de requisitos (similar al ERS). [cite: 56]
+         - ISD (Diseño del Sistema de Información): Diseño del comportamiento, interfaz y datos físicos. [cite: 56]
+         - CSI (Construcción del Sistema de Información): Se genera el código, se preparan BBDD, se ejecutan pruebas y se elaboran manuales. [cite: 57]
+         - IAS (Implantación y Aceptación del Sistema): Entrega y aceptación del sistema para el paso a producción. Incluye formación, migración y pruebas de aceptación. [cite: 58, 59]
+       - 3. Mantenimiento:
+         - Obtención de una nueva versión a partir de peticiones de mejora o corrección de problemas. [cite: 61]
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+guia_definitiva_ingenieria_software_ud1.txt
+------------------------------------------
+
+UD 1: INGENIERÍA DE SOFTWARE (GUÍA DE ESTUDIO COMPLETA)
+
+1. FUNDAMENTOS DE SOFTWARE
+-----------------------------------
+* INFORMÁTICA: Ciencia del tratamiento automático de la información por medio de máquinas electrónicas.
+* COMPONENTES ESENCIALES:
+    * HARDWARE (Soporte Físico): Componentes electrónicos tangibles.
+    * SOFTWARE (Soporte Lógico): Programas, datos y documentación.
+    * PERSONAL INFORMÁTICO: Equipo humano que gestiona ambos.
+* ALGORITMO: Conjunto de reglas ordenadas y finitas para resolver un problema. El programa es el algoritmo codificado.
+
+2. CLASIFICACIÓN DEL SOFTWARE
+-----------------------------------
+* SOFTWARE DE SISTEMAS: Gestiona y controla el hardware (Ej: Sistemas Operativos, Controladores).
+* SOFTWARE DE APLICACIONES: Permite realizar tareas específicas (Ej: Ofimática, Juegos).
+    * SOFTWARE HORIZONTAL (Genérico): Útil en muchos entornos (Ej: procesador de texto).
+    * SOFTWARE VERTICAL (A Medida): Específico para un cliente o entorno concreto (Ej: software de contabilidad empresarial).
+
+3. MODELOS DE DESARROLLO
+
+3.1. MODELO EN CASCADA (CLÁSICO)
+* Fases secuenciales y rígidas. La primera fase es el ANÁLISIS.
+* ENTREGABLES PRINCIPALES:
+    * Fase de Análisis: Documento ERS (Especificación de Requisitos del Software).
+    * Fase de Diseño: Documento SDD (Documento de Diseño de Software).
+* MANTENIMIENTO: Ocupa dos tercios (2/3) del tiempo total del proyecto.
+* TIPOS DE PRUEBAS (CLAVE):
+    * Pruebas Unitarias: Trozos pequeños de código.
+    * Pruebas de Integración: Módulos que interactúan.
+    * Pruebas de Validación: Comprueba que se cumple el ERS.
+    * Pruebas de Rendimiento: Mide el tiempo de respuesta bajo carga.
+    * Pruebas de Resistencia/Seguridad/Recuperación.
+* VERSIONES (Previas al Lanzamiento):
+    * Versión Alfa: Inestable, admite nuevas características.
+    * Versión Beta: Inestable, no admite nuevas características.
+    * Versión RTM: Versión estable lista para comercializar.
+
+3.2. MODELO EN ESPIRAL
+* Basado en la creación de PROTOTIPOS SUCESIVOS. Se refina en iteraciones.
+
+3.3. PROGRAMACIÓN EXTREMA (XP)
+* Método ÁGIL e iterativo.
+* RESTRICCIÓN DE TIEMPO: Las prestaciones/tareas no deben superar los **3 días**.
+* DISEÑO: Se utilizan las **Tarjetas CRC** (Clase, Responsabilidades, Colaboración).
+* PRÁCTICAS CLAVE:
+    * Crear los **tests unitarios antes que el código**.
+    * **Programación por parejas (Pair Programming)**: Dos programadores en un mismo puesto.
+
+4. MÉTRICA V.3 (METODOLOGÍA FORMAL)
+* Promovida por el Ministerio de Hacienda y Administraciones Públicas.
+* NORMA DE REFERENCIA: **ISO 12207**.
+* NORMA IEEE: La **IEEE** define la ingeniería de software como un enfoque sistemático, disciplinado y medible.
+
+* FASES DE MÉTRICA 3 (PROCESO DE DESARROLLO):
+    * EVS (Estudio de Viabilidad del Sistema): Analiza viabilidad económica, técnica, legal y operativa.
+    * ASI (Análisis del Sistema de Información): Se especifican requisitos y las **restricciones de sistema**.
+    * ISD (Diseño del Sistema de Información): Crea el diseño físico de datos e interfaces de usuario.
+    * CSI (Construcción del Sistema de Información): Se genera el código y se ejecutan las pruebas unitarias y de integración.
+    * IAS (Implantación y Aceptación del Sistema): Entrega final, incluye **formación de usuarios** y **migración de datos**.
+    * MANTENIMIENTO: Obtención de una nueva versión del sistema (El Service Pack es un tipo de parche).
+
+5. DOCUMENTACIÓN
+-----------------------------------
+* DOCUMENTACIÓN INTERNA: Comentarios dentro del código.
+* DOCUMENTACIÓN EXTERNA: Manuales (usuario/programador).
+* AUTODOCUMENTACIÓN: Ayuda accesible durante la ejecución del programa.
