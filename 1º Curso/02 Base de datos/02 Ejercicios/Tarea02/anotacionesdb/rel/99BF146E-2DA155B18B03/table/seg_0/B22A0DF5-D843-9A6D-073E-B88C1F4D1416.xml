@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B22A0DF5-D843-9A6D-073E-B88C1F4D1416" schemaObject="E8F5D7B9-6CE9-140F-283D-FC8005C119FB" name="FAMILIA">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>FAMILIA</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODFAMILIA" id="42108F32-A791-D481-CDF4-A1D6369784AD">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>FAMILIA</sourceObjSchema>
+<sourceObjName>CODFAMILIA</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DENOFAMILIA" id="3FD87E7D-28DB-35A6-7CCA-C06AEF1B53BD">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>FAMILIA</sourceObjSchema>
+<sourceObjName>DENOFAMILIA</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IVA" id="C48C0905-FCD5-33C7-60E9-F33A76E04299">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>FAMILIA</sourceObjSchema>
+<sourceObjName>IVA</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<constraintName>SYS_C008337</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<listOfValues>
+<valueDef value="10" description=""/>
+<valueDef value="24" description=""/>
+<valueDef value="4" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EDB110D7-A96E-D7F5-484E-71FE72A4F059" schemaObject="E8F5D7B9-6CE9-140F-283D-FC8005C119FB" name="FAMILIA_PK">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008315</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42108F32-A791-D481-CDF4-A1D6369784AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D626B8E-378E-9556-33A5-E2C456BF2538" schemaObject="E8F5D7B9-6CE9-140F-283D-FC8005C119FB" name="FAMILIA_DENOFAMILIA_UN">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008316</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FD87E7D-28DB-35A6-7CCA-C06AEF1B53BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="anotacionesdb" id="F3EC5181-FC30-4F3D-74A6-0B98D46ECFEE" version="3.5">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:49:24 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>F3EC5181-FC30-4F3D-74A6-0B98D46ECFEE</designId>
+</OSDM_Design>

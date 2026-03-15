@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="SYSTEM" directorySegmentName="seg_0" id="FF5EEFBD-A0B3-36AF-8E09-8D1E25ABA182">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjName>SYSTEM</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:30 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<schemaObject>E8F5D7B9-6CE9-140F-283D-FC8005C119FB</schemaObject>
+</UserOraclev10g>

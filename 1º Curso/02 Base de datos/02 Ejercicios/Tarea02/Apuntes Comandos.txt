@@ -1,0 +1,71 @@
+//CREATE TABLE Familia
+
+CREATE TABLE Productos (Codproducto NUMBER(5) PRIMARY KEY,Denoproducto VARCHAR2(20) UNIQUE,
+Descripción VARCHAR2(100),PrecioBase NUMBER(8,2) NOT NULL CHECK (PrecioBase > 0),PorcReposición NUMBER(3) CHECK (PorcReposición > 0),
+UnidadesMínimas NUMBER(4) NOT NULL CHECK (UnidadesMínimas >0), Codfamilia NUMBER(3)NOT NULL, FOREIGN KEY(Codfamilia) REFERENCES Familia(Codfamilia));
+
+CREATE TABLE Familia ( Codfamilia NUMBER(3)PRIMARY KEY,Denofamilia VARCHAR2(50) NOT NULL UNIQUE);
+
+CREATE TABLE Tienda (Codtienda NUMBER(3) PRIMARY KEY, Denotienda VARCHAR2(20) NOT NULL, Telefono VARCHAR2(11),CodigoPostal Varchar2(5) NOT NULL, Provincia VARCHAR2(5)NOT NULL );
+
+
+CREATE TABLE Stock (Codtienda NUMBER(3)NOT NULL ,PRIMARY KEY(Codtienda, Codproducto)
+,FOREIGN KEY (Codtienda) REFERENCES Tienda(Codtienda),Codproducto NUMBER(5)NOT NULL,FOREIGN KEY (Codproducto) REFERENCES Productos(Codproducto));
+
+
+
+// APARTADO A ) Modificar 
+
+// Para la tabla Stock
+
+
+// AÑADIR UNA COLUMNA NUEVA A UNA TABLA EXISTENTE
+
+ALTER TABLE ADD
+
+ALTER TABLE Stock ADD FechaUltimaEntrada DATE DEFAULT SYSDATE;
+
+ALTER TABLE Stock ADD Beneficio NUMBER CHECK ( Beneficio IN(1,2,3,4,5));
+
+// Para la tabla Productos
+
+// eliminar la columna descripción 
+
+ALTER TABLE Productos DROP COLUMN descripción ;
+
+// Añadir nueva tabla perecedero con valores concretos con IN 
+
+ALTER TABLE Productos ADD perecedero CHAR CHECK ( perecedero IN ('S', 'N'));
+
+// Modificar una columna de una tabla para cambiar sus propiedades
+ALTER TABLE Productos MODIFY (Denoproducto VARCHAR2(50));
+
+// tabla tienda
+
+// añadir restricción UNIQUE A código postal para que solo haya una tienda en un mismo lugar
+
+ALTER TABLE Tienda ADD CONSTRAINT codigopostal UNIQUE (codigopostal);
+
+// APARTADO B
+
+RENAME TABLE Stock TO PRODXTIENDAS.
+
+// APARTADO C
+
+DROP TABLE Tienda Cascade CONSTRAINTS;
+
+// APARTADO D
+
+CREATE USER C##INVITADO IDENTIFIED BY 11111
+// Permisos básicos 
+GRANT CONNECT TO C##INVITADO;
+// Privilegios sobre productos
+
+GRANT ALL ON PRODUCTOS TO C##INVITADO;
+
+// quitar permisos a INVITADO 
+
+
+
+REVOKE ALTER ON PRODUCTOS FROM C##INVITADO;
+REVOKE DELETE ON PRODUCTO FROM C##INVITADO;

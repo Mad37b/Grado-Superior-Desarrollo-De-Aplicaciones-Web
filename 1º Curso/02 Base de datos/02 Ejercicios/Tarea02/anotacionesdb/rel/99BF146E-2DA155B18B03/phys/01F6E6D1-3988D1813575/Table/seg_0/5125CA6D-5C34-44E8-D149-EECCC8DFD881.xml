@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PRODXTIENDAS" directorySegmentName="seg_0" id="5125CA6D-5C34-44E8-D149-EECCC8DFD881">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<schemaObject>E8F5D7B9-6CE9-140F-283D-FC8005C119FB</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6D64C2DD-7918-7EAE-62A3-52624A994678</segment>
+<tableSpace>09599814-B997-481A-41F0-D6F0B3E2F178</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CODTIENDA" id="15772EEB-1852-DBD2-E3E9-8780967EAE27">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BENEFICIO" id="78801110-7D7E-A67A-A7F5-EC130EB4F4F5">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHAULTIMAENTRADA" id="88BD1703-D0F9-3B79-73C3-2505E789E3E3">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="CODPRODUCTO" id="9E98909D-4EE7-21F4-E7C0-42C1EEF694BA">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008334" id="ECE2E37D-3D4D-C6BE-38C8-76A617AA11E3">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:32 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRODXTIENDAS_PK" id="45A3AFC8-86C4-523D-7AF6-042C50207CC5">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<schemaObject>E8F5D7B9-6CE9-140F-283D-FC8005C119FB</schemaObject>
+<segment>2F029F5F-9AA4-635A-6833-C939E5A3980B</segment>
+<tableSpace>09599814-B997-481A-41F0-D6F0B3E2F178</tableSpace>
+<indexSegment>2F029F5F-9AA4-635A-6833-C939E5A3980B</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

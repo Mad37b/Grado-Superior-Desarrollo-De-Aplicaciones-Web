@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="FAMILIA" directorySegmentName="seg_0" id="B22A0DF5-D843-9A6D-073E-B88C1F4D1416">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<schemaObject>E8F5D7B9-6CE9-140F-283D-FC8005C119FB</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6D64C2DD-7918-7EAE-62A3-52624A994678</segment>
+<tableSpace>09599814-B997-481A-41F0-D6F0B3E2F178</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DENOFAMILIA" id="3FD87E7D-28DB-35A6-7CCA-C06AEF1B53BD">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODFAMILIA" id="42108F32-A791-D481-CDF4-A1D6369784AD">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IVA" id="C48C0905-FCD5-33C7-60E9-F33A76E04299">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="FAMILIA_PK" id="EDB110D7-A96E-D7F5-484E-71FE72A4F059">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<schemaObject>E8F5D7B9-6CE9-140F-283D-FC8005C119FB</schemaObject>
+<segment>2F029F5F-9AA4-635A-6833-C939E5A3980B</segment>
+<tableSpace>09599814-B997-481A-41F0-D6F0B3E2F178</tableSpace>
+<indexSegment>2F029F5F-9AA4-635A-6833-C939E5A3980B</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="FAMILIA_DENOFAMILIA_UN" id="8D626B8E-378E-9556-33A5-E2C456BF2538">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<schemaObject>E8F5D7B9-6CE9-140F-283D-FC8005C119FB</schemaObject>
+<segment>2F029F5F-9AA4-635A-6833-C939E5A3980B</segment>
+<tableSpace>09599814-B997-481A-41F0-D6F0B3E2F178</tableSpace>
+<indexSegment>2F029F5F-9AA4-635A-6833-C939E5A3980B</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

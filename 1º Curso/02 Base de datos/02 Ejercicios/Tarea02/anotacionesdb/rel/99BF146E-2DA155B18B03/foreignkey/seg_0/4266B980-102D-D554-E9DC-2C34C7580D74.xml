@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4266B980-102D-D554-E9DC-2C34C7580D74" containerWithKeyObject="5125CA6D-5C34-44E8-D149-EECCC8DFD881" localFKIndex="ECE2E37D-3D4D-C6BE-38C8-76A617AA11E3" name="SYS_C008334">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008334</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:32 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<referredTableLongName>SYSTEM.PRODUCTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>52DFA3D1-52CC-230D-731F-775CF35B2E3F</referredTableID>
+<keyObject>E6241A6D-84A4-8F46-A12B-D57366DA676A</keyObject>
+<referredKeyID>E6241A6D-84A4-8F46-A12B-D57366DA676A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODPRODUCTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

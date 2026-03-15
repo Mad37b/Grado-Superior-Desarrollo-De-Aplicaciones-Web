@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="C##INVITADO" directorySegmentName="seg_0" id="BCC7B500-8FEC-3FE8-52BE-25E10A4DAE91">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjName>C##INVITADO</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:32 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="62AABF46-E501-308E-9FC1-0C97BC7C6F84">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:32 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<privileges>INDEX, INSERT, SELECT, UPDATE, REFERENCES, READ, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK</privileges>
+<table>52DFA3D1-52CC-230D-731F-775CF35B2E3F</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

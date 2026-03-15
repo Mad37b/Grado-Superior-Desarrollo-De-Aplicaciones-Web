@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5125CA6D-5C34-44E8-D149-EECCC8DFD881" schemaObject="E8F5D7B9-6CE9-140F-283D-FC8005C119FB" name="PRODXTIENDAS">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PRODXTIENDAS</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODTIENDA" id="15772EEB-1852-DBD2-E3E9-8780967EAE27">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>PRODXTIENDAS</sourceObjSchema>
+<sourceObjName>CODTIENDA</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODPRODUCTO" id="9E98909D-4EE7-21F4-E7C0-42C1EEF694BA">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>PRODXTIENDAS</sourceObjSchema>
+<sourceObjName>CODPRODUCTO</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4266B980-102D-D554-E9DC-2C34C7580D74" referredColumn="E843BA1D-521F-6AAC-F22D-77D81CA7ED4F"/>
+</associations>
+</Column>
+<Column name="FECHAULTIMAENTRADA" id="88BD1703-D0F9-3B79-73C3-2505E789E3E3">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>PRODXTIENDAS</sourceObjSchema>
+<sourceObjName>FECHAULTIMAENTRADA</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BENEFICIO" id="78801110-7D7E-A67A-A7F5-EC130EB4F4F5">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>PRODXTIENDAS</sourceObjSchema>
+<sourceObjName>BENEFICIO</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<constraintName>SYS_C008335</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<listOfValues>
+<valueDef value="1" description=""/>
+<valueDef value="2" description=""/>
+<valueDef value="3" description=""/>
+<valueDef value="4" description=""/>
+<valueDef value="5" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45A3AFC8-86C4-523D-7AF6-042C50207CC5" schemaObject="E8F5D7B9-6CE9-140F-283D-FC8005C119FB" name="PRODXTIENDAS_PK">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008332</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15772EEB-1852-DBD2-E3E9-8780967EAE27"/>
+<colUsage columnID="9E98909D-4EE7-21F4-E7C0-42C1EEF694BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ECE2E37D-3D4D-C6BE-38C8-76A617AA11E3" name="SYS_C008334">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:32 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E98909D-4EE7-21F4-E7C0-42C1EEF694BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

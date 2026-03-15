@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PRODUCTOS" directorySegmentName="seg_0" id="52DFA3D1-52CC-230D-731F-775CF35B2E3F">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<schemaObject>E8F5D7B9-6CE9-140F-283D-FC8005C119FB</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6D64C2DD-7918-7EAE-62A3-52624A994678</segment>
+<tableSpace>09599814-B997-481A-41F0-D6F0B3E2F178</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PORCREPOSICIÓN" id="22F2994E-DC00-F655-7F6F-EEA977651995">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODFAMILIA" id="91778A0B-CC6F-27F9-28B5-E6D8E0816780">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PERECEDERO" id="ADAB7885-6C5C-FB82-E96C-9C440294232D">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DENOPRODUCTO" id="B78CE51A-3081-C7EF-4A7C-72DF4D246AEF">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRECIOBASE" id="C772549F-5AB6-173A-C679-FED78A80E44B">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UNIDADESMÍNIMAS" id="D7254A6B-37A3-0C44-B82B-231A0A292D29">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODPRODUCTO" id="E843BA1D-521F-6AAC-F22D-77D81CA7ED4F">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008329" id="228C5A84-07FF-551C-CA7F-EE052BCFBC5E">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:32 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRODUCTOS_PK" id="E6241A6D-84A4-8F46-A12B-D57366DA676A">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<schemaObject>E8F5D7B9-6CE9-140F-283D-FC8005C119FB</schemaObject>
+<segment>2F029F5F-9AA4-635A-6833-C939E5A3980B</segment>
+<tableSpace>09599814-B997-481A-41F0-D6F0B3E2F178</tableSpace>
+<indexSegment>2F029F5F-9AA4-635A-6833-C939E5A3980B</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="PRODUCTOS_DENOPRODUCTO_UN" id="2491E23F-72F2-DBCE-0A32-1C7E1930EEB8">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<schemaObject>E8F5D7B9-6CE9-140F-283D-FC8005C119FB</schemaObject>
+<segment>2F029F5F-9AA4-635A-6833-C939E5A3980B</segment>
+<tableSpace>09599814-B997-481A-41F0-D6F0B3E2F178</tableSpace>
+<indexSegment>2F029F5F-9AA4-635A-6833-C939E5A3980B</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

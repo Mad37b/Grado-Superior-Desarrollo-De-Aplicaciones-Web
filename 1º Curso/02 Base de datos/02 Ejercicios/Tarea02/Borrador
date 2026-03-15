@@ -1,0 +1,29 @@
+
+Table STOCK alterado.
+
+
+Error que empieza en la línea: 1 del comando -
+SELECT* FROM Stock
+Error en la línea de comandos : 1 Columna : 14
+Informe de error -
+Error SQL: ORA-00900: sentencia SQL no válida
+
+https://docs.oracle.com/error-help/db/ora-00900/00900. 00000 -  "invalid SQL statement"
+*Cause:    The statement was not recognized as a valid SQL
+           statement. This error can occurred if the Procedural Option was
+           not installed and a SQL statement was issued that requires this
+           option (for example, a CREATE PROCEDURE statement). You can
+           determine if the Procedural Option was installed by starting
+           SQL*Plus. If the PL/SQL banner was not displayed, then the
+           option was not installed.
+*Action:   Correct the syntax or install the Procedural Option.
+
+More Details :
+https://docs.oracle.com/error-help/db/ora-00900/
+no se ha seleccionado ninguna fila
+
+Table STOCK alterado.
+
+
+Table PRODUCTOS alterado.
+

@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52DFA3D1-52CC-230D-731F-775CF35B2E3F" schemaObject="E8F5D7B9-6CE9-140F-283D-FC8005C119FB" name="PRODUCTOS">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PRODUCTOS</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODPRODUCTO" id="E843BA1D-521F-6AAC-F22D-77D81CA7ED4F">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>CODPRODUCTO</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DENOPRODUCTO" id="B78CE51A-3081-C7EF-4A7C-72DF4D246AEF">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>DENOPRODUCTO</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIOBASE" id="C772549F-5AB6-173A-C679-FED78A80E44B">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>PRECIOBASE</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<constraintName>SYS_C008324</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="PrecioBase &gt; 0"/>
+<implementationDef dbType="Oracle Database 21c" definition="PrecioBase &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PORCREPOSICIÓN" id="22F2994E-DC00-F655-7F6F-EEA977651995">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>PORCREPOSICIÓN</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<constraintName>SYS_C008325</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="PorcReposición &gt; 0"/>
+<implementationDef dbType="Oracle Database 21c" definition="PorcReposición &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIDADESMÍNIMAS" id="D7254A6B-37A3-0C44-B82B-231A0A292D29">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>UNIDADESMÍNIMAS</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<constraintName>SYS_C008326</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="UnidadesMínimas &gt;0"/>
+<implementationDef dbType="Oracle Database 21c" definition="UnidadesMínimas &gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODFAMILIA" id="91778A0B-CC6F-27F9-28B5-E6D8E0816780">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>CODFAMILIA</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="638D65C9-324C-4E35-60B6-75EFDB518E10" referredColumn="42108F32-A791-D481-CDF4-A1D6369784AD"/>
+</associations>
+</Column>
+<Column name="PERECEDERO" id="ADAB7885-6C5C-FB82-E96C-9C440294232D">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>PERECEDERO</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<constraintName>SYS_C008336</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6241A6D-84A4-8F46-A12B-D57366DA676A" schemaObject="E8F5D7B9-6CE9-140F-283D-FC8005C119FB" name="PRODUCTOS_PK">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008327</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E843BA1D-521F-6AAC-F22D-77D81CA7ED4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2491E23F-72F2-DBCE-0A32-1C7E1930EEB8" schemaObject="E8F5D7B9-6CE9-140F-283D-FC8005C119FB" name="PRODUCTOS_DENOPRODUCTO_UN">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008328</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:31 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B78CE51A-3081-C7EF-4A7C-72DF4D246AEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="228C5A84-07FF-551C-CA7F-EE052BCFBC5E" name="SYS_C008329">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:32 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91778A0B-CC6F-27F9-28B5-E6D8E0816780"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

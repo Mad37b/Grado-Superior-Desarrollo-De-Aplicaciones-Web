@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="99BF146E-C113-4C11-21DD-2DA155B18B03" mainViewID="A777C59D-53B1-A3C4-FD68-3AF69A085B51">
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:49:28 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>tarea01Admin</connName>
+<connUser>SYSTEM</connUser>
+<connType>1</connType>
+</importConnectionStamp>
+</importConnectionStamps>
+</relationalModel>

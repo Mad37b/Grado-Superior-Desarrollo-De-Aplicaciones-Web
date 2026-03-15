@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="638D65C9-324C-4E35-60B6-75EFDB518E10" containerWithKeyObject="52DFA3D1-52CC-230D-731F-775CF35B2E3F" localFKIndex="228C5A84-07FF-551C-CA7F-EE052BCFBC5E" name="SYS_C008329">
+<sourceConnName>tarea01Admin</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008329</sourceObjName>
+<createdBy>Ulises III</createdBy>
+<createdTime>2025-11-05 22:50:32 UTC</createdTime>
+<ownerDesignName>anotacionesdb</ownerDesignName>
+<referredTableLongName>SYSTEM.FAMILIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B22A0DF5-D843-9A6D-073E-B88C1F4D1416</referredTableID>
+<keyObject>EDB110D7-A96E-D7F5-484E-71FE72A4F059</keyObject>
+<referredKeyID>EDB110D7-A96E-D7F5-484E-71FE72A4F059</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODFAMILIA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

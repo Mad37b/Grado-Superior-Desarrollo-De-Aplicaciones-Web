@@ -1,0 +1,48 @@
+UD1
+
+Archivos Secuenciales
+
+Archivos Indexados
+
+Tipos de ficheros
+
+Acceso de fichero 
+
+Los metadatos siempre va relacionado con un diccionario de datos
+
+ver los niveles
+
+parámetros de un fichero
+
+Crecimiento
+
+Actividad - como el fichero maestro
+
+Volatilidad - 
+
+Capacidad - 
+
+
+Inteligencia de Negocio
+
+
+UD 2 
+
+Vista física 
+
+hay dos
+
+Vista Virtual 
+
+hay otras dos 
+
+ver
+
+Integridad de entidad vs Atomicidad 
+hay otras integridades
+
+Integridad de dominio vs Integridad de entidad 
+
+Unicidad vs irreductibilidad
+
+Codd 12
