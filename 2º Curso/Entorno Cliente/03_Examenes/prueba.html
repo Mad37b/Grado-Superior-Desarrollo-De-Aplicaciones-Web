@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- 1 -->
+    <div id="caja"><p>hola caja</p></div>
+  
+    <script> 
+
+        const caja = document.getElementById("caja");
+        caja.style.backgroundColor="blue";
+        caja.style.width="200px";
+        caja.style.height="200px";
+        console.log(caja.innerHTML);// nos devuelve el texto y el elemento
+        console.log(caja.textContent);// solo devuelve el texto
+        console.log(caja.outerHTML); // devuelve todo el contenido html del exterior
+        
+        // acceder al atributo
+
+        console.log(caja.id);
+        console.log(caja.className="cuadrado")
+        
+    </script>
+
+</body>
+</html>

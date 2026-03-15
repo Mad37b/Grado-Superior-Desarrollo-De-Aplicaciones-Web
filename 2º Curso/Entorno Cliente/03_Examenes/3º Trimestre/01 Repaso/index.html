@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Práctico JS: Eventos</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        .container { margin-bottom: 30px; padding: 15px; border: 1px solid #ccc; }
+        .box { width: 100px; height: 100px; background-color: lightcoral; margin-top: 10px; text-align: center; line-height: 100px; cursor: pointer; }
+        .highlight { background-color: lightblue !important; }
+        .hidden { display: none; }
+        #coordsOutput { margin-top: 10px; font-weight: bold; }
+        #log { margin-top: 10px; border: 1px solid #eee; padding: 5px; height: 100px; overflow-y: scroll; }
+        form div { margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+
+    <h1>Examen Práctico JS: Eventos</h1>
+
+    <div class="container">
+        <h2>Ejercicio 1: Click y Doble Click</h2>
+        <button id="simpleClickBtn">Hazme Click</button>
+        <button id="doubleClickBtn">Hazme Doble Click</button>
+        <p id="clickMessage">Esperando acción...</p>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 2: Eventos del Ratón</h2>
+        <div id="hoverBox" class="box">Pasa el ratón</div>
+        <p id="coordsOutput">X: ---, Y: ---</p>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 3: Eventos de Teclado</h2>
+        <label for="keyInput">Escribe algo:</label>
+        <input type="text" id="keyInput">
+        <p id="keyMessage">Tecla presionada: ---</p>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 4: Eventos de Formulario</h2>
+        <form id="myForm">
+            <div>
+                <label for="nameInput">Nombre:</label>
+                <input type="text" id="nameInput" name="name">
+            </div>
+            <div>
+                <label for="termsCheckbox">Acepto los términos:</label>
+                <input type="checkbox" id="termsCheckbox" name="terms">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="formFeedback" class="hidden">¡Formulario enviado!</p>
+    </div>
+
+    <div class="container">
+        <h2>Ejercicio 5: Delegación de Eventos</h2>
+        <ul id="itemList">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+        <div id="log"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
