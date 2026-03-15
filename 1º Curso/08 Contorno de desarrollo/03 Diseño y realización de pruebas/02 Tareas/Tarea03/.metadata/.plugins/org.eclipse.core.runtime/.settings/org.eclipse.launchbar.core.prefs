@@ -1,0 +1,10 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Cuenta,org.eclipse.launchbar.core.descriptorType.default\:CuentaTest
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Cuenta/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Cuenta/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:CuentaTest/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:prueba/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:prueba/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

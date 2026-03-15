@@ -1,0 +1,62 @@
+
+public class prueba {
+	public int ingresar(double cantidad) {
+	    int iCodErr;
+	    double dSaldo = 0; // añadido por mi que no estaba
+		     if (cantidad < 0){
+		             System.out.println("No se puede ingresar una cantidad negativa");
+		             iCodErr = 1;
+		     }
+		     else if (cantidad == -3.0){
+		             System.out.println("Error detectable en pruebas de caja blanca");
+		             iCodErr = 2;
+		     }
+		     else{
+		            // Depuracion. Punto de parada. Solo en el 3 ingreso
+		             dSaldo = dSaldo + cantidad;
+		             iCodErr = 0;
+		     }
+	     // Depuracion. Punto de parada cuando la cantidad  es menor de 0
+	     return iCodErr;
+	     
+	     
+	     
+	     
+		}
+	public void retirar (double cantidad){
+		   double dSaldo = 0; // añadido por mi que no estaba
+        if (cantidad <= 0){
+            System.out.println("No se puede retirar una cantidad negativa");
+        }
+        else if (dSaldo < cantidad){
+            System.out.println("No se hay suficiente saldo");
+        }
+        else{
+        	 System.out.println("Se ha introducido un saldo positivo"); // lo he puesto yo
+        }
+    }
+
+	
+	public static void main (String[]arg) {
+		
+		
+		Cuenta test = new Cuenta ();
+		
+		
+		System.out.println(test.ingresar(-3));
+		test.retirar(2.0);
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+
+}

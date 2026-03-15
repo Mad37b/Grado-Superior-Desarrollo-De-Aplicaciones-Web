@@ -1,13 +1,18 @@
 UD 1 Ingeniera de software
 
-
+** Modelos **
 
 Modelo en espiral basado en prototipos ( saber sobre prototipos sucesivos ) 
+
+** Documentos **
+
 
 Análisis para ver si un proyecto es viable :EVS.
 La implantación y aceptación del sistema IAS
 el documento que se utilza en la fase de diseño en la parte de programación extrema son las tarjetas CRC
 el documento que recoge los requisitos de software se llama ERS
+
+** ** 
 
 el mantenimiento se realiza en un tiempo de dos tercios
 el análisis es la primera fase en cascada
