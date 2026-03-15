@@ -1,0 +1,27 @@
+package ejerciciosud4;
+ import java.util.Scanner;
+/**
+ *Apartado 3
+ * @author Ulises III
+ */
+public class Ej02_coordenadas {
+      public static void main(String[] args) {
+          
+       double x;   
+       double y;
+       double intercambio;
+       Scanner teclado = new Scanner ( System.in);
+   
+         x = teclado.nextDouble();
+         y = teclado.nextDouble();
+           System.out.println(x +" y " +y);
+         // intercambio 
+         
+         intercambio = x;
+         x = y;
+         y = intercambio;
+         
+          System.out.println("Definitivo" + x +" y " +y);
+          
+      }
+}

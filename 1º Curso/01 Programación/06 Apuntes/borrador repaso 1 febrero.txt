@@ -1,0 +1,20 @@
+Ejercicio 1: Strings y lógica de validaciónEnunciado: Crea un método llamado validarPassword(String pass) que devuelva un booleano. Para que la contraseña sea válida debe cumplir:
+
+1. Tener al menos 8 caracteres.
+
+2. Contener al menos un número.
+
+3. Empezar por una letra mayúscula.
+
+4. No contener espacios en blanco.Pista: Usa los métodos .length(), .charAt(0), Character.isUpperCase(), Character.isDigit() y .contains(" ").
+
+
+Ejercicio 2: Arrays Unidimensionales (Estadísticas)Enunciado: Crea un programa que pida por teclado 10 notas de alumnos (valores decimales entre 0 y 10) y las guarde en un array. Después, el programa debe mostrar:La nota media de la clase.La nota más alta y la más baja.Cuántos alumnos han aprobado (nota >= 5).
+
+
+Ejercicio 3: Arrays Bidimensionales (Matrices)Enunciado: Crea una matriz de $3 \times 3$ de números enteros.Rellénala con números aleatorios entre 1 y 9.Muestra la matriz por consola de forma visual (filas y columnas).Calcula y muestra la suma de los elementos de la diagonal principal. Calcula la suma de cada fila por separado.
+
+
+Ejercicio 4: Clases y Objetos (POO básica)Enunciado: Diseña una clase llamada Producto con los siguientes atributos: nombre (String), precio (double) y stock (int).Crea un constructor que reciba todos los parámetros.Crea los métodos getter y setter.Añade un método vender(int cantidad) que reste el stock si hay suficiente, o muestre un error si no lo hay.En el main, crea un array de 3 objetos Producto y muestra el nombre del producto más caro.
+
+Ejercicio 5: El "Mix" (Objetos + Arrays + Strings) Enunciado: Tienes una clase Alumno con nombre y notaMedia. Crea un array de 5 alumnos.Implementa un método que busque a un alumno por su nombre (ignorando mayúsculas/minúsculas).Si lo encuentra, debe mostrar su nota. Si no, debe decir "Alumno no encontrado".

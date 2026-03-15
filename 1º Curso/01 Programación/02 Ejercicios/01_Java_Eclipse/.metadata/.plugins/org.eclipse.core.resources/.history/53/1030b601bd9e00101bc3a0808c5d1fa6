@@ -1,0 +1,17 @@
+package primos;
+import java.util.*;
+public class primos {
+
+	Scanner teclado = new Scanner(System.in);
+	String datos = teclado.nextLine();
+	int numero = Integer.parseInt(datos);
+	
+	if (numero % 2 == 0){
+		
+		
+	}
+	
+	
+	
+	
+}

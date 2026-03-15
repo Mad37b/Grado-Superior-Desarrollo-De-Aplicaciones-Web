@@ -1,0 +1,8 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:fibonacci,org.eclipse.launchbar.core.descriptorType.default\:fizzBuzz,org.eclipse.launchbar.core.descriptorType.default\:matriz,org.eclipse.launchbar.core.descriptorType.default\:matrizEspejo,org.eclipse.launchbar.core.descriptorType.default\:primos,org.eclipse.launchbar.core.descriptorType.default\:prueba2 (1),org.eclipse.launchbar.core.descriptorType.default\:sumaPrimerosNumeros,org.eclipse.launchbar.core.descriptorType.default\:array,org.eclipse.launchbar.core.descriptorType.default\:prueba (1),org.eclipse.launchbar.core.descriptorType.default\:prueba,org.eclipse.launchbar.core.descriptorType.default\:prueba2,org.eclipse.launchbar.core.descriptorType.default\:numeroPiramide,org.eclipse.launchbar.core.descriptorType.default\:numeroPrimosRango,org.eclipse.launchbar.core.descriptorType.default\:sumaFactorial
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:fibonacci/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:fibonacci/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:numeroPrimosRango/activeLaunchMode=run

@@ -1,0 +1,17 @@
+
+ // Restriciones
+    
+    // entrada 1 1
+    
+    //  GTS supone un total de 6 segundos por cada hora
+    
+    // la primera entrada es el número de días
+    
+    // la segunda el numero de emisoras
+    
+    // por ejemplo, la línea, 3 9 significa que durante 3 días, 9 emisoras han emitido la señal cada hora., la señal durará 6 segundos
+    
+      // quiere que le diga que cuanto tiempo total a pitado
+
+//24 horas * 6 segundos de pitidos = 144, segundos de pitidos en un dia  pasar los segundos a minutos (144 * emisora) / 60 = 2,4 .
+               // 24*dia = 24 (24*dia(2) = 48 * 6 * emisora (1)  ) / 60-> pasarlo a minutos 24*dia(2) = 48    

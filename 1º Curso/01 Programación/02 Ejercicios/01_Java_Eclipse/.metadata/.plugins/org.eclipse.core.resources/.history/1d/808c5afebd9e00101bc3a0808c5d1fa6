@@ -1,0 +1,44 @@
+package primos;
+import java.util.*;
+public class primos {
+	
+	
+	// 1. Numeros primos
+	
+	// si el resto es divisible , no es primo
+	
+	// si no es divisible, es primo
+
+	public static void main (String[] arg) {
+		System.out.println(" Bienvenido al programar problemas lógicos!" +" Numeros Primos");
+		System.out.println("Seleccione un numero");
+		Scanner teclado = new Scanner(System.in);
+		String datos = teclado.nextLine();
+		int numero = Integer.parseInt(datos);
+		
+	
+		String salida="";
+		
+		while (!salida.equalsIgnoreCase("salir") ) {
+			
+			
+			if (numero % 2 == 0){
+				System.out.println("Numero " + numero + " no es un numero primo");
+				
+			}else {
+				
+				System.out.println("Numero " + numero + " es un numero primo");
+			}
+			
+		 salida = teclado.next();
+			
+		}
+		
+		
+		
+	}
+	
+	
+	
+	
+}
