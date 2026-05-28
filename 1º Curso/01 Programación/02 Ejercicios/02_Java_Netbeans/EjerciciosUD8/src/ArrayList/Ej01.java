@@ -12,13 +12,13 @@ public class Ej01 {
 
         int tabla[][] = new int[4][4];
         Integer vector[] = {1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8};
-        int numero = 0;
+        int numero = 0; // da vueltas 
         ArrayList<Integer> lista = new ArrayList<>(Arrays.asList(vector)); // no le vale int - Solo le vale objetos, no primitivos
 
-        // Mezcla los numeros
+        // Mezcla los numeros de ArrayList lista
         Collections.shuffle(lista); // Por cada vez que se ejecuta cambia las posiciones 
 
-        //1. Rellenamos la tabla
+        //1. Rellenamos la tabla (array bidimensional )
         for (int i = 0; i < tabla.length; i++) {
             for (int j = 0; j < tabla[i].length; j++) {
                 tabla[i][j] = lista.get(numero++);

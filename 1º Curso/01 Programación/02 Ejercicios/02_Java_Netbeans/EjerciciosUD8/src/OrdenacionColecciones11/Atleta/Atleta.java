@@ -3,15 +3,15 @@ package OrdenacionColecciones11.Atleta;
 import OrdenacionColecciones.Atleta.*;
 
 /**
- * Ejercicio 10
+ * Ejercicio 10 con interface
  *
  * @author Ulises III
  */
-public class Atleta implements {
+public class Atleta implements Comparable<Atleta> {
 
     private String nombre;
     private String nif;
-    private int edad;
+    private Integer edad;
 
     public Atleta() {
     }
@@ -49,7 +49,19 @@ public class Atleta implements {
 
     @Override
     public String toString() {
-        return "Atleta{" + "nombre=" + nombre + ", nif=" + nif + ", edad=" + edad + '}';
+        return "Atleta" + "nombre= " + nombre + ", nif=" + nif + ", edad=" + edad +"años";
     }
-
+    // comparamos edades y lo ordenamos
+    @Override
+    public int compareTo(Atleta e1) {
+        
+        // return Integer.compare(this.edad, nuevo.edad);//si lo quiero al reves es return Integer.compare(nuevo.edad, this.edad);
+        return this.edad.compareTo(e1.edad);
+    }
+/*
+La otra forma es con formas no primitivas (String, Integer,...)
+public int compareTo(atleta nuevo){
+return this.edad.compareTo(nuevo.edad);
+}
+*/
 }

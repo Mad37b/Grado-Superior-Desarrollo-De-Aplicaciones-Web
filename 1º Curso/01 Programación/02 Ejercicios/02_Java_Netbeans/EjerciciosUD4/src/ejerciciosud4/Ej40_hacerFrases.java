@@ -23,6 +23,8 @@ public class Ej40_hacerFrases {
            
                if ( frase.equals(nuevaFrase)){
                    System.out.println("La frase es palindromo");
+               }else{
+                   System.out.println("La frase no es palindromo");
                }
     }
     

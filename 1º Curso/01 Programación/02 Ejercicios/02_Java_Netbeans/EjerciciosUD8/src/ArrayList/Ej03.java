@@ -3,7 +3,7 @@ package ArrayList;
 import java.util.*;
 
 /**
- * Ejercicio 03
+ * Ejercicio 03: Borrar repetidos 
  *
  * @author Ulises III
  */
@@ -29,6 +29,9 @@ public class Ej03 {
         numeros = teclado.nextInt();
         System.out.println("Inserte una posición");
         posicion = teclado.nextInt();
+        
+        
+        // 2. Evitamos los repetidos
         
         if (posicion < lista.size()) {
             lista.add(posicion,numeros);

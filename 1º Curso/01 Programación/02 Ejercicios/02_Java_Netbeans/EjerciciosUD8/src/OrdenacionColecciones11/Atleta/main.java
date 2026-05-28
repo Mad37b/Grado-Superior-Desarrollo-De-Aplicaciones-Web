@@ -21,9 +21,11 @@ public class main {
         for (int i = 0; i < 10; i++) {
             nombre = nombres[aleatorio.nextInt(nombres.length)];
             dni = nif [aleatorio.nextInt(nif.length)];
-            edad = aleatorio.nextInt(50)+18;
+            edad = aleatorio.nextInt(30)+18;
             listaAtleta.add(new Atleta(nombre,dni,edad));
         }
+        
+        Collections.sort(listaAtleta);
         for(Atleta lista : listaAtleta){
         
          System.out.println(lista);

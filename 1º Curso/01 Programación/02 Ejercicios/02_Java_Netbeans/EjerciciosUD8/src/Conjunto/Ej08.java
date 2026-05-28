@@ -3,7 +3,7 @@ package Conjunto;
 import java.util.*;
 
 /**
- *
+ * Ejercicio 8  - ( mas corto que usar hashSET?
  * @author Ulises III
  */
 public class Ej08 {

@@ -3,7 +3,7 @@ package ArrayList;
 import java.util.*;
 
 /**
- * Ejercicio 4: Loteria primitiva
+ * Ejercicio 4: Loteria primitiva Sin Scanner 
  *
  * @author Ulises III
  */
@@ -40,7 +40,7 @@ public class Ej04 {
          Collections.shuffle(listaReintegro);
         for (int i = 0; i < 5; i++) {
             
-            System.out.print("Combinación" + (i + 1) +  ":");
+            System.out.print("Combinación " + (i + 1) +  ": ");
             for (int j = 0; j < 6; j++) {
                 // Usamos i*6 para no repetir los mismos números en cada combinación
                 System.out.print(listaLoteria.get(i*6+j) + " ");  
